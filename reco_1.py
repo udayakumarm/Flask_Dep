@@ -89,7 +89,9 @@ def myfuc_PR(name_inp):
     d["review_title_text"] = d["reviews_title"] + d["reviews_text"]
 
     #RandFclassifer = joblib.load("model-RF.pkl")
-    RandFclassifer = joblib.load("model-XGBoost.pkl")
+    #RandFclassifer = joblib.load("model-XGBoost.pkl")
+    RandFclassifer = joblib.load("model-LR.pkl")
+
 
     X = d['review_title_text']
 
