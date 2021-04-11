@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import os
-from reco_1 import myfuc_PR
+from model import myfuc_PR
 
 app = Flask(__name__)
 
