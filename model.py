@@ -71,6 +71,7 @@ def myfuc_PR(name_inp):
     ### USER USER model is chose over ITEM ITEM model
     ### RMSE for USER USER is 2.412
     ### RMSE for ITEM ITEM is 3.576
+    ###
     # Creating the User Similarity Matrix using pairwise_distance function.
     user_correlation = 1 - pairwise_distances(df_pivot, metric='cosine')
     user_correlation[np.isnan(user_correlation)] = 0
@@ -91,6 +92,7 @@ def myfuc_PR(name_inp):
 
     d["review_title_text"] = d["reviews_title"] + d["reviews_text"]
 
+    ###
     ### found that Random Forest was huge & had upload issues in github
     ### Logistic Regression classifier is chosen based on the precision, recall & accuracy
     #RandFclassifer = joblib.load("model-RF.pkl")
